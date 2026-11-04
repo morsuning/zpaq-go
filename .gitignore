@@ -1,0 +1,10 @@
+# binaries and test artifacts
+/zpaq-go
+*.test
+*.out
+*.prof
+/dist/
+# local scratch
+*.zpaq
+!testdata/*.zpaq
+.DS_Store
