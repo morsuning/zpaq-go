@@ -97,11 +97,12 @@ zpaq-go l notes.zpaq                           # 列出段
 zpaq-go t notes.zpaq                           # 校验
 ```
 
-## ctxmix
+## 相关项目:ctxmix
 
-`github.com/morsuning/zpaq-go/ctxmix` 是另一个独立编解码器，格式自成一体（**不**兼容 ZPAQ）：
-更强的上下文混合模型，在上面的样本上得到 189,008 字节，比 ZPAQ 5 级小 3.9%，比 xz 小 27%。
-只有你自己的代码读取数据时可以用它。
+[ctxmix](https://github.com/morsuning/ctxmix) 是另一个独立编解码器，格式自成一体（**不**兼容 ZPAQ）：
+针对源代码和文本的更强上下文混合模型，在 Go 源码上比 `zpaq -m5` 小约 3.5%，比 `xz -9e` 小 27%。
+只有你自己的代码读取数据时可以用它。它最初是本模块的 `ctxmix` 子包，从 zpaq-go v0.2.0 起成为独立模块
+（`github.com/morsuning/ctxmix`）。
 
 ## 致谢与许可
 

@@ -66,9 +66,10 @@
 // reports malformed input as an error wrapping [ErrCorrupt]. Set the two
 // limits when decoding data from untrusted sources.
 //
-// # Related package
+// # Related project
 //
-// The ctxmix subpackage is a separate, stronger context-mixing model that is
-// not ZPAQ compatible: a few percent smaller than level 5, with its own
-// format. Use it when only your own code reads the data.
+// github.com/morsuning/ctxmix is a separate, stronger context-mixing codec that
+// is not ZPAQ compatible: a few percent smaller than level 5 on source code,
+// with its own format. Use it when only your own code reads the data. It was
+// the ctxmix subpackage of this module before v0.2.0.
 package zpaq

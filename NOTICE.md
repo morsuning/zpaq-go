@@ -18,5 +18,6 @@ this repository.
 
 ## ctxmix
 
-The `ctxmix` subpackage is original work and is not ZPAQ compatible.
-It is licensed under the repository's MIT license.
+The former `ctxmix` subpackage is now the separate project
+[github.com/morsuning/ctxmix](https://github.com/morsuning/ctxmix) (MIT licensed,
+original work, not ZPAQ compatible) and is no longer part of this repository.

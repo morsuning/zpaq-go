@@ -2,6 +2,15 @@
 
 All notable changes are listed here. The project follows [Semantic Versioning](https://semver.org/).
 
+## v0.2.0
+
+### Removed
+- The `ctxmix` subpackage moved to its own module,
+  [github.com/morsuning/ctxmix](https://github.com/morsuning/ctxmix) (v0.1.0). Change
+  the import path from `github.com/morsuning/zpaq-go/ctxmix` to
+  `github.com/morsuning/ctxmix`; streams written by the subpackage are read
+  unchanged. Nothing else changes: the ZPAQ API and output are identical to v0.1.0.
+
 ## v0.1.0
 
 First release.

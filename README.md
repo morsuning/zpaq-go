@@ -114,12 +114,13 @@ zpaq-go l notes.zpaq                           # list segments
 zpaq-go t notes.zpaq                           # verify
 ```
 
-## ctxmix
+## Related project: ctxmix
 
-`github.com/morsuning/zpaq-go/ctxmix` is a separate codec with its own format
-(not ZPAQ compatible): a stronger context-mixing model that produced 189,008
-bytes on the sample above, 3.9% less than ZPAQ level 5 and 27% less than xz.
-Use it when only your own code reads the data.
+[ctxmix](https://github.com/morsuning/ctxmix) is a separate codec with its own format
+(not ZPAQ compatible): a stronger context-mixing model for source code and text, about
+3.5% smaller than `zpaq -m5` and 27% smaller than `xz -9e` on Go source code. Use it when
+only your own code reads the data. It began as the `ctxmix` subpackage of this module and
+has been its own module (`github.com/morsuning/ctxmix`) since zpaq-go v0.2.0.
 
 ## Credits and license
 
